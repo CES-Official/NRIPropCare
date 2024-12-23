@@ -1,0 +1,404 @@
+<!doctype html>
+<html xmlns:og="http://opengraphprotocol.org/schema/" xmlns:fb="http://www.facebook.com/2008/fbml" lang="en-US" >
+<head>
+    <title>Box Test</title>
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+:root{
+    --pinkish-red: #C35A74;
+    --medium-blue: #307BAA;
+    --greenish-blue: #53BAB5;
+    --bright-orange: #FF7445;
+    --white-smoke: #F5F5F4;
+    --white: #FFF;
+    --dark-gray: #7D7C7C;
+    --black: #000;
+}
+
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+    background: var(--white-smoke);
+}
+
+.content{
+    display: flex;
+    justify-content: space-between;
+    width: 1200px;
+    margin: 100px;
+}
+
+.box{
+    display: flex;
+    flex-direction: column;
+    height: 586px;
+    width: 300px;
+    border-radius: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+
+    
+    background: var(--white);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 20%);
+}
+
+.title{
+    width: 100%;
+    padding: 10px 0;
+    font-size: 1.2em;
+    font-weight: lighter;
+    text-align: center;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+
+    color: var(--white-smoke);
+}
+
+.basic .title{
+    background: var(--pinkish-red);
+}
+
+.standard .title{
+    background: var(--medium-blue);
+}
+
+.business .title{
+    background: var(--greenish-blue);}
+
+.fourth .title{
+      background: var(--medium-blue);
+}
+
+.view{
+    display: block;
+    width: 100%;
+    padding: 30px 0 20px;
+
+    background: var(--white-smoke);
+}
+
+.icon{
+    display: flex;
+    justify-content: center;
+}
+
+.icon img{
+    width: 100px;
+}
+
+.cost{
+    display: flex;
+    justify-content:center;
+    flex-direction: row;
+    margin-top: 10px;
+   
+}
+
+.amount{
+    font-size: 1.0em;
+    font-weight: bolder;
+}
+
+.detail{
+    margin: auto 0 auto 5px;
+    width: 70px;
+    font-size: 0.7em;
+    font-weight: bold;
+    line-height: 15px;
+    color: #7D7C7C;
+}
+
+.description{
+    margin: 30px auto;
+    font-size: 0.8em;
+    color: #7D7C7C;
+    padding-left:15px;
+    padding-right: 10px;;
+}
+
+ul{
+    list-style: none;
+}
+
+li{
+    margin-top: 10px;
+}
+
+li::before{
+    content: "";
+    background-image: url("https://i.postimg.cc/ht7g996V/check.png");
+    background-position: center;
+    background-size: cover;
+    opacity: 0.5;
+
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin-right: 10px;
+}
+
+.button{
+    margin: 0 auto 30px;
+}
+
+button{
+    height: 40px;
+    width: 250px;
+    font-size: 0.7em;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    color: #7D7C7C;
+    border: 2px solid var(--dark-gray);
+    border-radius: 50px;
+
+    background: transparent;
+}
+
+button:hover{
+    color: var(--white-smoke);
+    transition: 0.5s;
+    border: none;
+
+    background: var(--bright-orange);
+}
+
+/* Responsiveness:Start */
+@media screen and (max-width:970px) {
+    .content{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin: 50px auto;
+    }
+    .standard, .business{
+        margin-top: 25px;
+    }
+}
+/* Responsiveness:End */
+    </style>
+</head>
+<body>
+
+  <section>
+    <div class="content">
+
+        <div class="basic box">
+            <h2 class="title">Registration & Setup</h2>
+            <div class="view">
+                <div class="icon">
+                    <img src="img/register.svg" alt="One Time Registration">
+                </div>
+                <div class="cost">
+                    <p class="amount">₹8,000<br> + GST</p>
+                    <br><p class="detail">per property</p> -->
+                </div>
+            </div>
+            <div class="description">
+                <ul>
+                    <li>Account creation</li>
+                    <li>Comprehensive property inspection</li>
+                    <li>Preparation of marketing materials to attract the right tenants.</li>
+                    <!-- <li>Marketing materials to attract the right tenants.</li> -->
+                      
+                </ul>
+            </div>
+            <div class="button">
+                <button type="submit" >START FREE 7 DAYS TRIAL</button>
+            </div>
+        </div>
+
+        <div class="standard box">
+            <h2 class="title">Tenant Placement</h2>
+            <div class="view">
+                <div class="icon">
+                    <img src="img/tenant.svg" alt="Tenant Placement">
+                </div>
+                <div class="cost">
+                    <!-- <p class="amount">Equivalent to one month’s rent</p> -->
+                    <p class="amount">1 month rent</p>
+                    <!-- <p class="detail">per student per year</p> -->
+                </div>
+            </div>
+            <div class="description">
+                <ul>
+                    <li>Covers the cost of resources invested in finding and placing reliable tenants.</li>
+                    <li>Collaboration with external agencies to secure the best tenant, if needed.</li>
+                    <!-- <li>Odit, fugit saepe.</li>
+                    <li>Harum, veniam suscipit!</li>
+                    <li>A, aut veritatis!</li>
+                    <li>Aliquid, quasi repellat!</li> -->
+                </ul>
+            </div>
+            <div class="button">
+                <button type="submit" >START FREE 7 DAYS TRIAL</button>
+            </div>
+        </div>
+
+        <div class="business box">
+            <h2 class="title">Management Fee</h2>
+            <div class="view">
+                <div class="icon">
+                    <img src="https://i.postimg.cc/wvFd6FRY/startup.png" alt="startup">
+                </div>
+                <div class="cost">
+                    <p class="amount">10% of<br> monthly rent</p>
+                    <p class="detail">per property per year</p>
+                </div>
+            </div>
+            <div class="description">
+                <ul>
+                    <li>Charged only during the period your property is rented</li>
+                    <li>Covers management services, including tenant support, rent collection, and issue resolution.</li>
+                </ul>
+            </div>
+            <div class="button">
+                <button type="submit" >START FREE 7 DAYS TRIAL</button>
+            </div>
+        </div>
+
+        <div class="fourth box">
+          <h2 class="title">Rent Agreement Regn</h2>
+          <div class="view">
+              <div class="icon">
+                  <img src="img/agreement.svg" alt="startup">
+              </div>
+              <div class="cost">
+                  <p class="amount">Applicable govt<br> charges +<br> ₹3,000 service charge</p>
+                  <p class="detail">per agreement</p>
+              </div>
+          </div>
+          <div class="description">
+              <ul>
+                  <li>Making, notarizing, and registering the legal rental agreement </li>
+                  <li>Compliance with local laws, protecting landlord and the tenant.</li>
+              </ul>
+          </div>
+          <div class="button">
+              <button type="submit" >START FREE 7 DAYS TRIAL</button>
+          </div>
+      </div>
+
+    </div>
+</section>
+
+<section>
+  <div class="content">
+
+      <div class="basic box">
+          <h2 class="title">Maintenance & Repairs</h2>
+          <div class="view">
+              <div class="icon">
+                  <img src="img/repair.svg" alt="Maintenance & Repairs">
+              </div>
+              <div class="cost">
+                  <p class="amount">Actual repair costs +<br> 10% service charge</p>
+                  <!-- <br><p class="detail">per property</p> --> -->
+              </div>
+          </div>
+          <div class="description">
+              <ul>
+                  <li>Covers regular upkeep or emergency repairs.</li>
+                  <li>All expenses are transparent, with actual bills provided.</li>
+  
+              </ul>
+          </div>
+          <div class="button">
+              <button type="submit" >START FREE 7 DAYS TRIAL</button>
+          </div>
+      </div>
+
+      <div class="standard box">
+          <h2 class="title">Lease Renewal</h2>
+          <div class="view">
+              <div class="icon">
+                  <img src="img/lease.svg" alt="Lease Renewal">
+              </div>
+              <div class="cost">
+                  <!-- <p class="amount">Equivalent to one month’s rent</p> -->
+                  <p class="amount">15 days’ rent</p>
+                  <!-- <p class="detail">per student per year</p> -->
+              </div>
+          </div>
+          <div class="description">
+              <ul>
+                  <li>Renewing an existing tenant’s lease, making any needed amendments</li>
+                  <li>Property inspection, including documentation and administrative tasks.</li>
+               
+              </ul>
+          </div>
+          <div class="button">
+              <button type="submit" >START FREE 7 DAYS TRIAL</button>
+          </div>
+      </div>
+
+      <div class="business box">
+          <h2 class="title">Eviction</h2>
+          <div class="view">
+              <div class="icon">
+                  <img src="https://i.postimg.cc/wvFd6FRY/startup.png" alt="startup">
+              </div>
+              <div class="cost">
+                  <p class="amount">10% of<br> monthly rent</p>
+                  <p class="detail">per property per year</p>
+              </div>
+          </div>
+          <div class="description">
+              <ul>
+                  <li>Charged only during the period your property is rented</li>
+                  <li>Covers management services, including tenant support, rent collection, and issue resolution.</li>
+              </ul>
+          </div>
+          <div class="button">
+              <button type="submit" >START FREE 7 DAYS TRIAL</button>
+          </div>
+      </div>
+
+      <div class="fourth box">
+        <h2 class="title">Rent Agreement Registration</h2>
+        <div class="view">
+            <div class="icon">
+                <img src="img/agreement.svg" alt="startup">
+            </div>
+            <div class="cost">
+                <p class="amount">Applicable govt<br> charges +<br> ₹3,000 service charge</p>
+                <p class="detail">per agreement</p>
+            </div>
+        </div>
+        <div class="description">
+            <ul>
+                <li>Making, notarizing, and registering the legal rental agreement </li>
+                <li>Compliance with local laws, protecting landlord and the tenant.</li>
+            </ul>
+        </div>
+        <div class="button">
+            <button type="submit" >START FREE 7 DAYS TRIAL</button>
+        </div>
+    </div>
+
+  </div>
+</section>
+
+
+
+
+<script>
+document.querySelectorAll('button').forEach(button => {
+  button.addEventListener('click', () => {
+    alert('Thank you for choosing our plan!');
+  });
+});
+</script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  </body>

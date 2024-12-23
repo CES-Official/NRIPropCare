@@ -1,0 +1,125 @@
+<!doctype html>
+<html xmlns:og="http://opengraphprotocol.org/schema/" xmlns:fb="http://www.facebook.com/2008/fbml" lang="en-US" >
+<head>
+    <title>Box Test</title>
+
+    <style>
+        body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.pricing-table {
+  display: flex;
+  justify-content: space-around;
+  width: 80%;
+}
+
+.pricing-card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  width: 30%;
+  transition: transform 0.3s;
+}
+
+.pricing-card:hover {
+  transform: scale(1.05);
+}
+
+.pricing-card h3 {
+  margin: 0;
+  font-size: 24px;
+  color: #333;
+}
+
+.pricing-card .price {
+  font-size: 36px;
+  color: #333;
+}
+
+.pricing-card .price span {
+  font-size: 18px;
+  color: #777;
+}
+
+.pricing-card ul {
+  list-style: none;
+  padding: 0;
+}
+
+.pricing-card ul li {
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.pricing-card button {
+  background: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.pricing-card button:hover {
+  background: #0056b3;
+}
+
+    </style>
+</head>
+<body>
+
+
+<div class="pricing-table">
+    <div class="pricing-card">
+      <h3>Basic Plan</h3>
+      <p class="price">$10<span>/month</span></p>
+      <ul>
+        <li>Feature 1</li>
+        <li>Feature 2</li>
+        <li>Feature 3</li>
+      </ul>
+      <button>Sign Up</button>
+    </div>
+    <div class="pricing-card">
+      <h3>Standard Plan</h3>
+      <p class="price">$20<span>/month</span></p>
+      <ul>
+        <li>Feature 1</li>
+        <li>Feature 2</li>
+        <li>Feature 3</li>
+        <li>Feature 4</li>
+      </ul>
+      <button>Sign Up</button>
+    </div>
+    <div class="pricing-card">
+      <h3>Premium Plan</h3>
+      <p class="price">$30<span>/month</span></p>
+      <ul>
+        <li>Feature 1</li>
+        <li>Feature 2</li>
+        <li>Feature 3</li>
+        <li>Feature 4</li>
+        <li>Feature 5</li>
+      </ul>
+      <button>Sign Up</button>
+    </div>
+  </div>
+
+<script>
+  document.querySelectorAll('.pricing-card button').forEach(button => {
+    button.addEventListener('click', () => {
+      alert('Thank you for choosing our plan!');
+    });
+  });
+</script>>
+  </body>
